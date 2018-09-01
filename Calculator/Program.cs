@@ -2,11 +2,18 @@
 
 namespace Calculator
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            int result = 0;
+
+            // Create a simple calculator that asks the user to input two different numbers 
+            // and whether they want to add, subtract, multiply or divide them. 
+
+            Console.WriteLine($"Total = {result}");
+
+            Console.ReadLine();
         }
     }
 }
