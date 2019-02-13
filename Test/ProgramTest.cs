@@ -34,7 +34,7 @@ namespace Test
             {
                 Console.SetOut(sw);
 
-                using (StringReader sr = new StringReader("4" + Environment.NewLine + "2" + Environment.NewLine + "subtract"))
+                using (StringReader sr = new StringReader("6" + Environment.NewLine + "2" + Environment.NewLine + "subtract"))
                 {
                     Console.SetIn(sr);
 
@@ -43,7 +43,7 @@ namespace Test
 
                 var result = sw.ToString().Replace(Environment.NewLine, "");
 
-                Assert.EndsWith("2", result);
+                Assert.EndsWith("4", result);
             }
         }
 
